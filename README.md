@@ -84,6 +84,21 @@ LOGIN_REDIRECT_URL = '/'
 - mkdir templates 
 - mkdir templates/allauth 
 
+## bootstrap 4 template
 
+- Bootstrap 4 documentation, which you can find [here](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+- The Bootstrap Github Repository can be accessed [here](https://github.com/twbs/bootstrap)
+- minified jQuery library: <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+- all the features :<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+**Note**: Make sure you change the line above in the same place where the Starter Template has it. The jQuery library must be loaded before Popper and Bootstrap for everything to work correctly.
 
+- cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/* ./templates/allauth/
+**note** for python version write python and tap tab
+- from bootstratp documantation get  **Starter template** [here](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+- add meta <meta http-equiv="X-UA-Compatible" content="ie=edge"> - allowed suport for older edge versions
+
+- add to the head under css :
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
