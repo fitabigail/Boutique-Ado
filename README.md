@@ -103,3 +103,20 @@ LOGIN_REDIRECT_URL = '/'
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+## base.html
+- make page dynamic and add blocks for better structure : {% load static %}
+
+## start app:
+- python3 manage.py start app home
+- create home/ template/home folders: mkdir -p home/templates/home
+- on home folder create index.html
+- on index.html extend base : {% extends "base.html" %}
+- create view
+- create urls
+- include home app to main urls.py file
+- add app name to instaled apps on settings.py
+- add on Directories :
+'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
+        ],
