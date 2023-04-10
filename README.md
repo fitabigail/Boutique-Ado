@@ -120,3 +120,12 @@ LOGIN_REDIRECT_URL = '/'
             os.path.join(BASE_DIR, 'templates'),
             os.path.join(BASE_DIR, 'templates', 'allauth'),
         ],
+- add content to inde.html
+- add main page header to base.html
+- create mkdir static
+- create mkdir media
+- create mkdir static/css
+- add style 
+- link base.html with base.css, fontawesome and add google fonts
+- add to settings.py the static file route and media 
+- add to botique_ado urls : from django.conf import settings and from django.conf.urls.static import static + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
