@@ -107,7 +107,7 @@ LOGIN_REDIRECT_URL = '/'
 - make page dynamic and add blocks for better structure : {% load static %}
 
 ## start app:
-- python3 manage.py start app home
+- python3 manage.py startapp home
 - create home/ template/home folders: mkdir -p home/templates/home
 - on home folder create index.html
 - on index.html extend base : {% extends "base.html" %}
