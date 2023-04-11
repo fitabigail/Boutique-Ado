@@ -131,3 +131,13 @@ LOGIN_REDIRECT_URL = '/'
 - add to botique_ado urls : from django.conf import settings and from django.conf.urls.static import static + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 - add navbar to base.html
 - add includes forlder to templates: mkdir templates/includes
+- add images [here](https://github.com/Code-Institute-Solutions/boutique_ado_images/blob/master/pics/)
+- add products app: python3 manage.py startapp products
+-  dry migrations: python3 manage.py makemigrations --dry-run
+- install pillow: pip3 install pillow
+- freeze and migrate with python3 manage.py migrate --plan to check if are other changes to other models. I f not sure when migrate please add the name of the app
+- and python3 manage.py makemigrations
+- python3 manage.py migrate
+-  load data  form json files:
+python3 manage.py loaddata categories
+python3 manage.py loaddata products
