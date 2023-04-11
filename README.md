@@ -129,3 +129,5 @@ LOGIN_REDIRECT_URL = '/'
 - link base.html with base.css, fontawesome and add google fonts
 - add to settings.py the static file route and media 
 - add to botique_ado urls : from django.conf import settings and from django.conf.urls.static import static + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+- add navbar to base.html
+- add includes forlder to templates: mkdir templates/includes
