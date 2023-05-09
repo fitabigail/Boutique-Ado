@@ -120,7 +120,7 @@ LOGIN_REDIRECT_URL = '/'
             os.path.join(BASE_DIR, 'templates'),
             os.path.join(BASE_DIR, 'templates', 'allauth'),
         ],
-- add content to inde.html
+- add content to index.html
 - add main page header to base.html
 - create mkdir static
 - create mkdir media
@@ -130,7 +130,7 @@ LOGIN_REDIRECT_URL = '/'
 - add to settings.py the static file route and media 
 - add to botique_ado urls : from django.conf import settings and from django.conf.urls.static import static + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 - add navbar to base.html
-- add includes forlder to templates: mkdir templates/includes
+- add includes folder to templates: mkdir templates/includes
 - add images [here](https://github.com/Code-Institute-Solutions/boutique_ado_images/blob/master/pics/)
 - add products app: python3 manage.py startapp products
 -  dry migrations: python3 manage.py makemigrations --dry-run
@@ -141,3 +141,8 @@ LOGIN_REDIRECT_URL = '/'
 -  load data  form json files:
 python3 manage.py loaddata categories
 python3 manage.py loaddata products
+- add admin view
+- add models categories and product
+- add view for products and product_details
+- add templates to products and product details and urls
+
